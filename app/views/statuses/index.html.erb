@@ -1,0 +1,8 @@
+<h1>Status</h1>
+
+<% @statuses.each do |status| %>
+  <hr />
+  <h2><%= status.user.name %></h2>
+  <p><%= status.created_at %></p>
+  <p><%= status.content %></p>
+<% end %>
